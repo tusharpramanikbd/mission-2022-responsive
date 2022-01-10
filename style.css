@@ -109,7 +109,7 @@ banner section
 	margin: 0 auto;
 }
 .banner-img {
-	width: 65%;
+	width: 15rem;
 	margin: 0 auto;
 	padding: 1rem 0;
 }
@@ -132,6 +132,37 @@ banner section
 	left: 0;
 	top: 10%;
 	border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+	.section-banner{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.banner-img {
+		margin: 0;
+		flex: 0 0 45%;
+	}
+	.banner-info {
+		flex: 0 0 50%;
+	}
+}
+@media screen and (min-width: 992px) {
+	.banner-img {
+		flex: 0 0 40%;
+	}
+	.banner-info {
+		flex: 0 0 53%;
+	}
+	.banner-info h1 {
+		font-size: 3rem;
+	}
+}
+@media screen and (min-width: 1170px) {
+  .banner-info h1 {
+		font-size: 3.5rem;
+	}
 }
 /*
 =====================
