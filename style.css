@@ -12,6 +12,7 @@ Variables
 	--radius: 0.25rem;
 	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	--border: 2px solid red;
 }
 /*
 =============== 
@@ -46,7 +47,7 @@ h3,
 h4 {
 	text-transform: capitalize;
 }
-h1{
+/* h1{
 	font-size: 3.5rem;
 }
 h2 {
@@ -57,7 +58,7 @@ h3{
 }
 h4{
 	font-size: 0.9rem;
-}
+} */
 p{
 	color: rgba(0, 0, 0, 0.9);
 }
@@ -73,36 +74,66 @@ Global Classes
 	cursor: pointer;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 	border-radius: var(--radius);
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	background: linear-gradient(45deg, var(--clr-primary), var(--clr-primary));
 	color: var(--clr-white);
 	font-size: 0.9rem;
 	text-transform: capitalize;
 	font-weight: normal;
 }
-.section-center{
-	width: 78vw;
-	margin: 0 auto;
-	max-width: 1170px;
-	min-height: auto;
-}
-.section-container{
-	display: flex;
-}
 .section-heading{
 	margin-bottom: 1rem;
 	font-family: var(--ff-secondary);
 }
+/* .section-center{
+	width: 78vw;
+	margin: 0 auto;
+	max-width: 1170px;
+	min-height: 100vh;
+}
+.section-container{
+	display: flex;
+	flex-wrap: wrap;
+}
 .section-heading span{
 	color: var(--clr-primary);
-}
+} */
 /* 
 ==============
 banner section
 ==============
 */
-
-/* 
+.section-banner{
+	min-height: 100vh;
+	width: 80vw;
+	margin: 0 auto;
+}
+.banner-img {
+	width: 65%;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+.banner-heading-bottom{
+	color: var(--clr-primary);
+}
+.banner-info p {
+	margin-bottom: 1rem;
+}
+.banner-heading{
+	position: relative;
+	padding-left: 1rem;
+}
+.banner-heading::before{
+	content: "";
+	width: 1%;
+	height: 80%;
+	background: var(--clr-primary);
+	position: absolute;
+	left: 0;
+	top: 10%;
+	border-radius: 10px;
+}
+/*
 =====================
 end of banner section
 =====================
