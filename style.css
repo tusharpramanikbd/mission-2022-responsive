@@ -105,16 +105,19 @@ banner section
 */
 .section-banner{
 	min-height: 100vh;
-	width: 80vw;
+	width: 90vw;
 	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .banner-img {
 	width: 15rem;
 	margin: 0 auto;
-	padding: 1rem 0;
+	margin-bottom: 1rem;
 }
-.banner-heading-bottom{
-	color: var(--clr-primary);
+.banner-info {
+	margin-bottom: 1rem;
 }
 .banner-info p {
 	margin-bottom: 1rem;
@@ -133,8 +136,14 @@ banner section
 	top: 10%;
 	border-radius: 10px;
 }
+.banner-heading-bottom{
+	color: var(--clr-primary);
+}
 @media screen and (min-width: 768px) {
 	.section-banner{
+		width: 85vw;
+	}
+	.banner-container{
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
@@ -142,26 +151,21 @@ banner section
 	}
 	.banner-img {
 		margin: 0;
-		flex: 0 0 45%;
-	}
-	.banner-info {
-		flex: 0 0 50%;
-	}
-}
-@media screen and (min-width: 992px) {
-	.banner-img {
 		flex: 0 0 40%;
 	}
 	.banner-info {
-		flex: 0 0 53%;
+		flex: 0 0 55%;
+	}
+	.banner-info h1 {
+		font-size: 2.5rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	.section-banner{
+		width: 80vw;
 	}
 	.banner-info h1 {
 		font-size: 3rem;
-	}
-}
-@media screen and (min-width: 1170px) {
-  .banner-info h1 {
-		font-size: 3.5rem;
 	}
 }
 /*
