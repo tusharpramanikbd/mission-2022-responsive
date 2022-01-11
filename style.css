@@ -108,6 +108,7 @@ banner section
 	width: 90vw;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
@@ -164,8 +165,16 @@ banner section
 	.section-banner{
 		width: 80vw;
 	}
+	.banner-info {
+		flex: 0 0 50%;
+	}
 	.banner-info h1 {
 		font-size: 3rem;
+	}
+}
+@media screen and (min-width: 1170px) {
+  .banner-info {
+		flex: 0 0 45%;
 	}
 }
 /*
@@ -173,7 +182,76 @@ banner section
 end of banner section
 =====================
 */
+.section-mymission{
+	width: 70vw;
+	margin: 0 auto;
+}
+.mymission-container{
+	margin-bottom: 1rem;
+}
+.mymission-heading{
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+.mymission-heading span{
+	color: var(--clr-primary);
+}
+.mymission-card{
+	border-radius: 30px;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+.mymission-card-img{
+	width: 50%;
+	margin-bottom: 1rem;
+}
+.mymission-card-info h2{
+	margin-bottom: 1rem;
+}
+.mymission-card-1{
+	background-color: rgb(200, 241, 241);
+}
+.mymission-card-2{
+	background-color: rgb(241, 207, 203);
+}
+.mymission-card-3{
+	background-color: rgb(243, 225, 209);
+}
 
+@media screen and (min-width: 768px) {
+  .section-mymission{
+		width: 85vw;
+	}
+	.mymission-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.mymission-card{
+		flex: 1 0 47%;
+	}
+	.mymission-card-1{
+		margin-right: 2rem;
+	}
+	.mymission-heading{
+		font-size: 2.5rem;
+	}
+}
+@media screen and (min-width: 992px) {
+  .section-mymission{
+		width: 80vw;
+	}
+	.mymission-card{
+		flex: 0 0 31.5%;
+	}
+	.mymission-card-1{
+		margin-right: 0;
+	}
+	.mymission-heading{
+		font-size: 3rem;
+	}
+}
 /* 
 ==================
 My Mission Section
