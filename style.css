@@ -85,6 +85,9 @@ Global Classes
 	margin-bottom: 1rem;
 	font-family: var(--ff-secondary);
 }
+.section-heading span{
+	color: var(--clr-primary);
+}
 /* .section-center{
 	width: 78vw;
 	margin: 0 auto;
@@ -182,6 +185,12 @@ banner section
 end of banner section
 =====================
 */
+
+/* 
+==================
+My Mission Section
+================== 
+*/
 .section-mymission{
 	width: 70vw;
 	margin: 0 auto;
@@ -248,16 +257,7 @@ end of banner section
 	.mymission-card-1{
 		margin-right: 0;
 	}
-	.mymission-heading{
-		font-size: 3rem;
-	}
 }
-/* 
-==================
-My Mission Section
-================== 
-*/
-
 /* 
 =========================
 End of My Mission Section
@@ -269,7 +269,66 @@ End of My Mission Section
 Section Limit
 ============= 
 */
-
+.section-limit{
+	background-image: url("./images/shapes/shape-1.png");
+  background-repeat: no-repeat;
+	background-position: 23% 15%;
+	background-size: 15%;
+	margin: 2rem 0;
+}
+.limit-container{
+	width: 90vw;
+	margin: 0 auto;
+}
+.limit-heading h1{
+	font-size: 2rem;
+}
+.limit-img{
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+.limit-info p{
+	margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+	.section-limit{
+		background-position: 1% 50%;
+	}
+	.limit-container{
+		width: 85vw;
+	}
+  .limit-container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.limit-img {
+		margin: 0;
+		flex: 0 0 40%;
+	}
+	.limit-info {
+		flex: 0 0 54%;
+	}
+	.limit-heading h1{
+		font-size: 2.5rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	.section-limit{
+		background-position: 5% 50%;
+	}
+  .limit-container{
+		width: 80vw;
+	}
+	.limit-img {
+		flex: 0 0 35%;
+	}
+	.limit-info {
+		flex: 0 0 59%;
+	}
+}
 /* 
 ====================
 End of Section Limit
