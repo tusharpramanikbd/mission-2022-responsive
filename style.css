@@ -6,6 +6,7 @@ Variables
 :root {
 	--clr-white: #fff;
 	--clr-primary: rgb(248, 104, 88);
+	--clr-primary-hover: rgb(245, 133, 120);
 	--ff-primary: 'Poppins', sans-serif;
 	--ff-secondary: 'Luxurious Roman', cursive;
 	--spacing: 0.25rem;
@@ -68,6 +69,9 @@ Global Classes
 	font-size: 0.9rem;
 	text-transform: capitalize;
 	font-weight: normal;
+}
+.btn:hover{
+	background: var(--clr-primary-hover);
 }
 .section-heading{
 	margin-bottom: 1rem;
